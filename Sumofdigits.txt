@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Sumofdigits {
+
+	public static void main(String[] args) {
+		int n,rem,sum=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter the number :");
+		n=sc.nextInt();
+		while(n>0) {
+			rem=n%20;
+			sum=sum+rem;
+			n=n/20;
+			
+		}
+		System.out.print("sum of digits:"+sum);
+	}
+
+}
